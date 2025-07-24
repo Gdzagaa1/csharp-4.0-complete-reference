@@ -20,6 +20,30 @@ class Program
         
         Console.WriteLine("--Squares--");
         MultiAndJaggedExamples.Squares();
+        
+        Console.WriteLine("--Count Zero Neighbors--");
+        int[,] matrix =
+        {
+            { 1, 0, 1 },
+            { 0, 1, 0 }
+        };
+        int[,] resultMatrix = MultiAndJaggedArrayExercises.CountZeroNeighbors(matrix);
+        PrintMatrix(resultMatrix);
+    }
+    
+    static void PrintMatrix(int[,] matrix)
+    {
+        int rows = matrix.GetLength(0);
+        int cols = matrix.GetLength(1);
+    
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                Console.Write(matrix[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
     }
 
 
