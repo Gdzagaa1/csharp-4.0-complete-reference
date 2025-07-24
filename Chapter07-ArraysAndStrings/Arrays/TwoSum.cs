@@ -1,5 +1,9 @@
 namespace Chapter07_ArraysAndStrings;
 
+/*
+ * Here is my solution to Leetcode problem:
+ * https://leetcode.com/problems/two-sum/
+ */
 public class TwoSum
 {
     public static int[] Solution(int[] nums, int target) {
