@@ -5,7 +5,7 @@ namespace Chapter07_ArraysAndStrings.Multi_Jagged;
  * from Chapter 7 for testing/learning (Some of them may be changed).
  */
 
-public class ExamplesMultiAndJagged
+public class MultiAndJaggedExamples
 {
     
     // Demonstrate a two-dimensional array.

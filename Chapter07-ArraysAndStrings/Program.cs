@@ -6,20 +6,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        //TestArrays();
+        TestArrays();
         TestMultiJagged();
     }
 
     static void TestMultiJagged()
     {
         Console.WriteLine("--TwoD--");
-        ExamplesMultiAndJagged.TwoD();
+        MultiAndJaggedExamples.TwoD();
         
         Console.WriteLine("--ThreeDMatrix--");
-        ExamplesMultiAndJagged.ThreeDMatrix();
+        MultiAndJaggedExamples.ThreeDMatrix();
         
         Console.WriteLine("--Squares--");
-        ExamplesMultiAndJagged.Squares();
+        MultiAndJaggedExamples.Squares();
     }
 
 
@@ -28,7 +28,7 @@ class Program
     {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
-        int[] result = TwoSum.Solution(nums, target);
+        int[] result = ArrayExercise.TwoSum(nums, target);
         Console.WriteLine("--TwoSum--");
         Console.WriteLine(result[0] + " " + result[1]);
     }

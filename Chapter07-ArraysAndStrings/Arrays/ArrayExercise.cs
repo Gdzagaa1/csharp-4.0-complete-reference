@@ -1,12 +1,14 @@
 namespace Chapter07_ArraysAndStrings;
 
 /*
- * Here is my solution to Leetcode problem:
- * https://leetcode.com/problems/two-sum/
+ * Basic array exercise(s).
  */
-public class TwoSum
+public class ArrayExercise
 {
-    public static int[] Solution(int[] nums, int target) {
+    
+    // My solution to Leetcode problem:
+    // https://leetcode.com/problems/two-sum/
+    public static int[] TwoSum(int[] nums, int target) {
         int[] res = new int[2];
         bool found = false;
         for (int i = 0; i < nums.Length - 1 && !found; i++) {
