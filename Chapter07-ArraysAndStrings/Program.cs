@@ -1,13 +1,27 @@
 ﻿using System;
 using Chapter07_ArraysAndStrings;
 using Chapter07_ArraysAndStrings.Multi_Jagged;
+using Chapter07_ArraysAndStrings.Strings;
 
 class Program
 {
     static void Main(string[] args)
     {
-        TestArrays();
-        TestMultiJagged();
+       // TestArrays();
+       // TestMultiJagged();
+        TestStrings();
+    }
+
+    static void TestStrings()
+    {
+        Console.WriteLine("--StrOps--");
+        StringExamples.StrOps();
+        
+        Console.WriteLine("--String Switch--");
+        StringExamples.StringSwitch();
+        
+        Console.WriteLine("--Anagrams--");
+        Console.WriteLine(StringExercises.isAnagram("Listen", "Silent"));
     }
 
     static void TestMultiJagged()
