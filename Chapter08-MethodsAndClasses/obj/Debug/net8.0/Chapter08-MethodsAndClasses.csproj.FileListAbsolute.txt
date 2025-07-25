@@ -1,0 +1,15 @@
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/bin/Debug/net8.0/Chapter08-MethodsAndClasses
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/bin/Debug/net8.0/Chapter08-MethodsAndClasses.deps.json
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/bin/Debug/net8.0/Chapter08-MethodsAndClasses.runtimeconfig.json
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/bin/Debug/net8.0/Chapter08-MethodsAndClasses.dll
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/bin/Debug/net8.0/Chapter08-MethodsAndClasses.pdb
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/obj/Debug/net8.0/Chapter08-MethodsAndClasses.GeneratedMSBuildEditorConfig.editorconfig
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/obj/Debug/net8.0/Chapter08-MethodsAndClasses.AssemblyInfoInputs.cache
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/obj/Debug/net8.0/Chapter08-MethodsAndClasses.AssemblyInfo.cs
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/obj/Debug/net8.0/Chapter08-MethodsAndClasses.csproj.CoreCompileInputs.cache
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/obj/Debug/net8.0/Chapter08-MethodsAndClasses.sourcelink.json
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/obj/Debug/net8.0/Chapter08-MethodsAndClasses.dll
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/obj/Debug/net8.0/refint/Chapter08-MethodsAndClasses.dll
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/obj/Debug/net8.0/Chapter08-MethodsAndClasses.pdb
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/obj/Debug/net8.0/Chapter08-MethodsAndClasses.genruntimeconfig.cache
+/Users/giorgidzagania/Desktop/csharp-4.0-complete-reference/Chapter08-MethodsAndClasses/obj/Debug/net8.0/ref/Chapter08-MethodsAndClasses.dll
