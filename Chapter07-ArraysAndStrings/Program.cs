@@ -22,6 +22,9 @@ class Program
         
         Console.WriteLine("--Anagrams--");
         Console.WriteLine(StringExercises.isAnagram("Listen", "Silent"));
+        
+        Console.WriteLine("--Longest Word--");
+        Console.WriteLine(StringExercises.LongestWord("The quick brown fox"));
     }
 
     static void TestMultiJagged()

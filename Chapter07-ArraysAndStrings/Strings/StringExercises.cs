@@ -45,6 +45,28 @@ public class StringExercises
 
         return new string(chars1) == new string(chars2);
     }
+    
+    
+    // Find Longest Word
+    // Goal: Return the longest word in the sentence.
+    // Example:
+    // Input: "The quick brown fox" → Output: "quick"
+    public static string LongestWord(string sentence)
+    {
+        if (string.IsNullOrWhiteSpace(sentence))
+            return "";
+
+        string[] words = sentence.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        string longest = "";
+
+        foreach (string w in words)
+        {
+            if (w.Length > longest.Length)
+                longest = w;
+        }
+
+        return longest;
+    }
 
 
 }
