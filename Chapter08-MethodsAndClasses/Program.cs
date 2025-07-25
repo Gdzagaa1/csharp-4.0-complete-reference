@@ -22,6 +22,9 @@ class Program
         
         Console.WriteLine("--Common Factor--");
         refOut.DemoOut();
+        
+        Console.WriteLine("--RefSwap--");
+        refOut.RefSwapDemo();
     }
 }
 
