@@ -11,11 +11,17 @@ class Program
     {
         RefOut refOut = new RefOut();
         
-        Console.WriteLine("--Ref Demo--");
+        Console.WriteLine("--RefDemo/sqr--");
         refOut.RefDemo();
         
         Console.WriteLine("--Swap--");
         refOut.SwapDemo();
+        
+        Console.WriteLine("--UseOut--");
+        refOut.UseOut();
+        
+        Console.WriteLine("--Common Factor--");
+        refOut.DemoOut();
     }
 }
 
