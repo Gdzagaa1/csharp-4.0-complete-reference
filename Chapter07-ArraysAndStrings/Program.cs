@@ -29,6 +29,12 @@ class Program
         };
         int[,] resultMatrix = MultiAndJaggedArrayExercises.CountZeroNeighbors(matrix);
         PrintMatrix(resultMatrix);
+        
+        Console.WriteLine("--Jagged--");
+        MultiAndJaggedExamples.Jagged();
+        
+        Console.WriteLine("--implicitly typed jagged array--");
+        MultiAndJaggedExamples.ImplicitJagged();
     }
     
     static void PrintMatrix(int[,] matrix)

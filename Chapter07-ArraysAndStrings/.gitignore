@@ -1,0 +1,16 @@
+# Build results
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# IDE files
+.vs/
+.idea/
+*.user
+*.suo
+
+# OS files
+.DS_Store
+Thumbs.db
