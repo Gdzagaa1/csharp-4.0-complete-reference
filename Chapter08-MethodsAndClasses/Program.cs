@@ -1,4 +1,5 @@
 ﻿using Chapter08_MethodsAndClasses;
+using Chapter08_MethodsAndClasses.Overloading;
 
 
 class Program
@@ -6,8 +7,36 @@ class Program
     static void Main()
     {
         //TestRefOut();
+        //TestFindFactors();
         //TestParams();
-        TestFactory();
+        //TestFactory();
+        TestOverloading();
+    }
+
+    static void TestOverloading()
+    {
+        Console.WriteLine("--Overload Demo--");
+        OverloadDemo od = new OverloadDemo();
+        od.ovlDemo();
+
+        Console.WriteLine("");
+        Console.WriteLine("--Stack Overload Constructor--");
+        StackDemo sd = new StackDemo();
+        sd.useStack();
+        
+        Console.WriteLine("");
+        Console.WriteLine("--XYCoord, this--");
+        OverloadConsDemo overloadCons = new OverloadConsDemo();
+        overloadCons.callXY();
+
+    }
+
+    static void TestFindFactors()
+    {
+        FindFactors findFactors = new FindFactors();
+        
+        Console.WriteLine("--Find Factors--");
+        findFactors.find();
     }
 
     static void TestFactory()
