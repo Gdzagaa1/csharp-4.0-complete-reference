@@ -1,17 +1,37 @@
 ﻿using Chapter08_MethodsAndClasses;
+using Chapter08_MethodsAndClasses.OptionalArguments;
 using Chapter08_MethodsAndClasses.Overloading;
+using Chapter08_MethodsAndClasses.Static;
 
 
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
         //TestRefOut();
         //TestFindFactors();
         //TestParams();
         //TestFactory();
-        TestOverloading();
+        //TestOverloading();
+        //TestOpt();
+        TestStatic();
     }
+
+    static void TestStatic()
+    {
+        Console.WriteLine("--Static--");
+        StaticClassDemo scd = new StaticClassDemo();
+        scd.testStatic();
+    }
+
+    static void TestOpt()
+    {
+        Console.WriteLine("--Optional Arguments--");
+        UseOptArgs op = new UseOptArgs();
+        op.Display("this is a test");
+        op.Display("this is a test", 10);
+        op.Display("this is a test", 5, 12);
+    } 
 
     static void TestOverloading()
     {
