@@ -1,10 +1,29 @@
 ﻿using Chapter08_MethodsAndClasses;
 
+
 class Program
 {
     static void Main()
     {
-        TestRefOut();
+        //TestRefOut();
+        //TestParams();
+        TestFactory();
+    }
+
+    static void TestFactory()
+    {
+        MakeObjects obj = new MakeObjects();
+        
+        Console.WriteLine("--FactoryDemo--");
+        obj.make();
+    }
+
+    static void TestParams()
+    {
+        ParamsDemo paramsDemo = new ParamsDemo();
+        
+        Console.WriteLine("--ParamsDemo--");
+        paramsDemo.Param();
     }
 
     static void TestRefOut()
