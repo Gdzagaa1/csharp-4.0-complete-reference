@@ -1,5 +1,8 @@
 namespace Chapter09_IndexersAndProperties;
 
+/*
+ * Demonstrate usage of FailSoftArray with indexers
+ */
 public class FSDemo
 {
     public static void fs() {
@@ -35,5 +38,21 @@ public class FSDemo
             else
                 Console.WriteLine("fs[" + i + "] out-of-bounds");
         }
+    }
+    
+    
+    
+    
+    public static void fsOverload() {
+        FailSoftArray fs = new FailSoftArray(5);
+
+        for(int i = 0; i < fs.Length; i++)
+            fs[i] = i;
+
+        Console.WriteLine("fs[1]: " + fs[1]);
+        
+        Console.WriteLine("fs[2]: " + fs[2]);
+        Console.WriteLine("fs[1.1]: " + fs[1.1]);
+        Console.WriteLine("fs[1.6]: " + fs[1.6]);
     }
 }
