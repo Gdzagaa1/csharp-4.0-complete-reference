@@ -2,11 +2,19 @@
 
 using Chapter09_IndexersAndProperties;
 using Chapter09_IndexersAndProperties.Indexers;
+using Chapter09_IndexersAndProperties.Properties;
 
 class Program {
     static void Main()
     {
         TestIndexers();
+        TestProperties();
+    }
+
+    static void TestProperties()
+    {
+        Console.WriteLine("--SimpProp--");
+        PropertyDemo.callSimpProp();
     }
 
     static void TestIndexers()
