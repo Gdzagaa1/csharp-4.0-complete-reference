@@ -3,11 +3,12 @@
 using Chapter09_IndexersAndProperties;
 using Chapter09_IndexersAndProperties.Indexers;
 using Chapter09_IndexersAndProperties.Properties;
+using Chapter09_IndexersAndProperties.Properties.fail_soft;
 
 class Program {
     static void Main()
     {
-        TestIndexers();
+        //TestIndexers();
         TestProperties();
     }
 
@@ -15,6 +16,10 @@ class Program {
     {
         Console.WriteLine("--SimpProp--");
         PropertyDemo.callSimpProp();
+        
+        Console.WriteLine("--FS PROPERTIES");
+        ImprovedFSDemo.improveFs();
+            
     }
 
     static void TestIndexers()
