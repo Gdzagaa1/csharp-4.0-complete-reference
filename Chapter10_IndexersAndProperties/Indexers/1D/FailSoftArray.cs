@@ -1,4 +1,4 @@
-namespace Chapter09_IndexersAndProperties;
+namespace Chapter10_IndexersAndProperties;
 
 
 // Use an indexer to create a fail-soft array.

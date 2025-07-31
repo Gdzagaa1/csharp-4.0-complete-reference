@@ -1,4 +1,4 @@
-namespace Chapter09_IndexersAndProperties.Properties;
+namespace Chapter10_IndexersAndProperties.Properties;
 
 public class PropertyDemo
 {

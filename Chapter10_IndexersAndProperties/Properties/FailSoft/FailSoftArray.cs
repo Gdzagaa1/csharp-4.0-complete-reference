@@ -1,4 +1,4 @@
-namespace Chapter09_IndexersAndProperties.Properties.fail_soft;
+namespace Chapter10_IndexersAndProperties.Properties.fail_soft;
 
 
 // Add Length property to FailSoftArray.

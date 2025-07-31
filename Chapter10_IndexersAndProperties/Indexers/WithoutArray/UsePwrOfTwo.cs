@@ -1,4 +1,4 @@
-namespace Chapter09_IndexersAndProperties.Indexers;
+namespace Chapter10_IndexersAndProperties.Indexers;
 
 public class UsePwrOfTwo
 {

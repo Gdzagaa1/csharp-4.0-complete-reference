@@ -1,4 +1,4 @@
-namespace Chapter09_IndexersAndProperties.Properties.FailSoftFinalAuto;
+namespace Chapter10_IndexersAndProperties.Properties.FailSoftFinalAuto;
 
 public class FinalFSDemo
 {

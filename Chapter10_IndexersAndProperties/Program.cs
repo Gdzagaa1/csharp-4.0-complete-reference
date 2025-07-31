@@ -1,19 +1,28 @@
 ﻿
 
-using Chapter09_IndexersAndProperties;
-using Chapter09_IndexersAndProperties.Indexers;
-using Chapter09_IndexersAndProperties.Properties;
-using Chapter09_IndexersAndProperties.Properties.AccessMod;
-using Chapter09_IndexersAndProperties.Properties.fail_soft;
-using Chapter09_IndexersAndProperties.Properties.FailSoftFinalAuto;
-using Chapter09_IndexersAndProperties.RangeArray;
+using Chapter10_IndexersAndProperties;
+using Chapter10_IndexersAndProperties.DynamicArray;
+using Chapter10_IndexersAndProperties.Indexers;
+using Chapter10_IndexersAndProperties.Properties;
+using Chapter10_IndexersAndProperties.Properties.AccessMod;
+using Chapter10_IndexersAndProperties.Properties.fail_soft;
+using Chapter10_IndexersAndProperties.Properties.FailSoftFinalAuto;
+using Chapter10_IndexersAndProperties.RangeArray;
 
 class Program {
     static void Main()
     {
-        //TestIndexers();
-        //TestProperties();
+        TestIndexers();
+        TestProperties();
         TestRangeArray();
+        TestDynamicArray();
+    }
+
+    static void TestDynamicArray()
+    {
+        Console.WriteLine();
+        Console.WriteLine("--DYNAMIC ARRAY--");
+        DynamicArrayDemo.UseDynamicArray();
     }
 
     static void TestRangeArray()

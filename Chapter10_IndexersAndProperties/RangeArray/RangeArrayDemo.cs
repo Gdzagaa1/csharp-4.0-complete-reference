@@ -1,4 +1,4 @@
-namespace Chapter09_IndexersAndProperties.RangeArray;
+namespace Chapter10_IndexersAndProperties.RangeArray;
 
 // Demonstrate the index-range array.
 public class RangeArrayDemo

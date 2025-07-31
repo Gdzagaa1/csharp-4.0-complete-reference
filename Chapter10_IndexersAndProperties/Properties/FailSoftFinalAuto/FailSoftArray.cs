@@ -1,4 +1,4 @@
-namespace Chapter09_IndexersAndProperties.Properties.FailSoftFinalAuto;
+namespace Chapter10_IndexersAndProperties.Properties.FailSoftFinalAuto;
 
 // Use read-only, auto-implemented properties for Length and Error.
 

@@ -1,4 +1,4 @@
-namespace Chapter09_IndexersAndProperties.Properties.AccessMod;
+namespace Chapter10_IndexersAndProperties.Properties.AccessMod;
 
 public class PropAccessDemo
 {

@@ -1,4 +1,4 @@
-namespace Chapter09_IndexersAndProperties;
+namespace Chapter10_IndexersAndProperties;
 
 /*
  * Demonstrate usage of FailSoftArray with indexers

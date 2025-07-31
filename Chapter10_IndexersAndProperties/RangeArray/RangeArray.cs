@@ -1,4 +1,4 @@
-namespace Chapter09_IndexersAndProperties.RangeArray;
+namespace Chapter10_IndexersAndProperties.RangeArray;
 
 
 /*  Book example.
