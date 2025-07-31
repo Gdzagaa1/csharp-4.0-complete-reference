@@ -18,5 +18,12 @@ public class ImprovedFSDemo
         }
         Console.WriteLine();
         // fs.Length = 10; // Error, illegal!
+        
+        // Use Error property.
+        for(int i = 0; i < fs.Length + 1; i++) {
+            fs[i] = i * 10;
+            if(fs.Error)
+                Console.WriteLine("Error with index " + i);
+        }
     }
 }

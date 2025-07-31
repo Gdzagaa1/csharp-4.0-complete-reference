@@ -7,7 +7,7 @@ public class FailSoftArray
 {
     int[] a; // reference to underlying array
     int len; // length of array -- underlies Length property
-    public bool ErrFlag; // indicates outcome of last operation
+    bool ErrFlag; // indicates outcome of last operation
     
     // Construct array given its size.
     public FailSoftArray(int size) {
@@ -19,6 +19,13 @@ public class FailSoftArray
     public int Length {
         get {
             return len;
+        }
+    }
+    
+    // Read-only Error property.
+    public bool Error {
+        get {
+            return ErrFlag;
         }
     }
     

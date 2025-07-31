@@ -3,6 +3,7 @@
 using Chapter09_IndexersAndProperties;
 using Chapter09_IndexersAndProperties.Indexers;
 using Chapter09_IndexersAndProperties.Properties;
+using Chapter09_IndexersAndProperties.Properties.AccessMod;
 using Chapter09_IndexersAndProperties.Properties.fail_soft;
 
 class Program {
@@ -19,7 +20,9 @@ class Program {
         
         Console.WriteLine("--FS PROPERTIES");
         ImprovedFSDemo.improveFs();
-            
+        
+        Console.WriteLine("--PropAccess--");
+        PropAccessDemo.prop();
     }
 
     static void TestIndexers()
