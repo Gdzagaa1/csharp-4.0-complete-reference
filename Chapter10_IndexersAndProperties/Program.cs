@@ -6,16 +6,26 @@ using Chapter09_IndexersAndProperties.Properties;
 using Chapter09_IndexersAndProperties.Properties.AccessMod;
 using Chapter09_IndexersAndProperties.Properties.fail_soft;
 using Chapter09_IndexersAndProperties.Properties.FailSoftFinalAuto;
+using Chapter09_IndexersAndProperties.RangeArray;
 
 class Program {
     static void Main()
     {
         //TestIndexers();
-        TestProperties();
+        //TestProperties();
+        TestRangeArray();
+    }
+
+    static void TestRangeArray()
+    {
+        Console.WriteLine();
+        Console.WriteLine("--RANGE ARRAY--");
+        RangeArrayDemo.useRangeArray();
     }
 
     static void TestProperties()
     {
+        Console.WriteLine();
         Console.WriteLine("--SimpProp--");
         PropertyDemo.callSimpProp();
         
@@ -34,6 +44,7 @@ class Program {
 
     static void TestIndexers()
     {
+        Console.WriteLine();
         Console.WriteLine("--FS INDEXERS--");
         FSDemo.fs();
         
