@@ -5,6 +5,7 @@ using Chapter09_IndexersAndProperties.Indexers;
 using Chapter09_IndexersAndProperties.Properties;
 using Chapter09_IndexersAndProperties.Properties.AccessMod;
 using Chapter09_IndexersAndProperties.Properties.fail_soft;
+using Chapter09_IndexersAndProperties.Properties.FailSoftFinalAuto;
 
 class Program {
     static void Main()
@@ -18,11 +19,17 @@ class Program {
         Console.WriteLine("--SimpProp--");
         PropertyDemo.callSimpProp();
         
-        Console.WriteLine("--FS PROPERTIES");
+        Console.WriteLine();
+        Console.WriteLine("--FS PROPERTIES--");
         ImprovedFSDemo.improveFs();
         
+        Console.WriteLine();
         Console.WriteLine("--PropAccess--");
         PropAccessDemo.prop();
+        
+        Console.WriteLine();
+        Console.WriteLine("--FS FINAL AUTO PROPERTIES--");
+        FinalFSDemo.useFinalFs();
     }
 
     static void TestIndexers()
@@ -37,7 +44,6 @@ class Program {
         Console.WriteLine();
         Console.WriteLine("--Indexer without array--");
         UsePwrOfTwo.usePwr();
-        
-        
+
     }
 }
