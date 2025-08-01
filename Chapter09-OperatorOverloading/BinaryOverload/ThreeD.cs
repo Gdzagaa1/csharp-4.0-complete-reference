@@ -1,5 +1,7 @@
 namespace Chapter09_OperatorOverloading.BinaryOverload;
 
+// An example of operator overloading.
+// Overload addition for ThreeD + ThreeD, and for ThreeD + int.
 public class ThreeD
 {
     int x, y, z; // 3-D coordinates
@@ -23,6 +25,26 @@ public class ThreeD
         result.x = op1.x + op2.x; // These are integer additions
         result.y = op1.y + op2.y; // and the + retains its original
         result.z = op1.z + op2.z; // meaning relative to them.
+        return result;
+    }
+    
+    // Overload binary + for object + int.
+    public static ThreeD operator +(ThreeD op1, int op2)
+    {
+        ThreeD result = new ThreeD();
+        result.x = op1.x + op2;
+        result.y = op1.y + op2;
+        result.z = op1.z + op2;
+        return result;
+    }
+    
+    // Overload binary + for int + ThreeD.
+    public static ThreeD operator +(int op1, ThreeD op2)
+    {
+        ThreeD result = new ThreeD();
+        result.x = op2.x + op1;
+        result.y = op2.y + op1;
+        result.z = op2.z + op1;
         return result;
     }
     

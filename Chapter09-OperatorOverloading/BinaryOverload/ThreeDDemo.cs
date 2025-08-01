@@ -5,7 +5,7 @@ public class ThreeDDemo
     public static void useThreeD() {
         ThreeD a = new ThreeD(1, 2, 3);
         ThreeD b = new ThreeD(10, 10, 10);
-        ThreeD c;
+        ThreeD c = new ThreeD();
         
         Console.Write("Here is a: ");
         a.Show();
@@ -14,24 +14,18 @@ public class ThreeDDemo
         b.Show();
         Console.WriteLine();
         
-        c = a + b; // add a and b together
+        c = a + b; // ThreeD + ThreeD
         Console.Write("Result of a + b: ");
         c.Show();
         Console.WriteLine();
         
-        c = a + b + c; // add a, b, and c together
-        Console.Write("Result of a + b + c: ");
+        c = b + 10; // ThreeD + int
+        Console.Write("Result of b + 10: ");
         c.Show();
         Console.WriteLine();
         
-        c = c - a; // subtract a
-        Console.Write("Result of c - a: ");
+        c = 15 + b; // int + ThreeD
+        Console.Write("Result of 15 + b: ");
         c.Show();
-        Console.WriteLine();
-        
-        c = c - b; // subtract b
-        Console.Write("Result of c - b: ");
-        c.Show();
-        Console.WriteLine();
     }
 }
