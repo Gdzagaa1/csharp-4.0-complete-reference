@@ -8,6 +8,39 @@ public class ThreeDDemo
         testOperMethodOverload();
         testTrueAndFalseOverload();
         testLogical();
+        testConversion();
+    }
+
+    static void testConversion()
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Implicit conversion:");
+        Console.WriteLine("");
+
+        ThreeD a = new ThreeD(1, 2, 3);
+        ThreeD b = new ThreeD(10, 10, 10);
+        ThreeD c = new ThreeD();
+        int i;
+        
+        Console.Write("Here is a: ");
+        a.Show();
+        Console.WriteLine();
+        Console.Write("Here is b: ");
+        b.Show();
+        Console.WriteLine();
+        
+        c = a + b; // add a and b together
+        Console.Write("Result of a + b: ");
+        c.Show();
+        
+        Console.WriteLine();
+        
+        i = a; // convert to int
+        Console.WriteLine("Result of i = a: " + i);
+        Console.WriteLine();
+        
+        i = a * 2 - b; // convert to int
+        Console.WriteLine("result of a * 2 - b: " + i);
     }
 
     static void testLogical()

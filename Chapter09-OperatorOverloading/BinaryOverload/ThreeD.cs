@@ -16,6 +16,18 @@ public class ThreeD
         x = i; y = j; z = k;
     }
     
+    // An implicit conversion from ThreeD to int.
+    public static implicit operator int(ThreeD op1)
+    {
+        return op1.x * op1.y * op1.z;
+    }
+    
+    // // This is now explicit.
+    // public static explicit operator int(ThreeD op1)
+    // {
+    //     return op1.x * op1.y * op1.z;
+    // }
+    
     // Overload binary +.
     public static ThreeD operator +(ThreeD op1, ThreeD op2)
     {
