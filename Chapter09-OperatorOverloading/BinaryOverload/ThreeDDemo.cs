@@ -2,7 +2,58 @@ namespace Chapter09_OperatorOverloading.BinaryOverload;
 
 public class ThreeDDemo
 {
-    public static void useThreeD() {
+    public static void useThreeD()
+    {
+
+        testOperMethodOverload();
+        testTrueAndFalseOverload();
+        
+
+
+        
+        
+    }
+
+    static void testTrueAndFalseOverload()
+    {
+        Console.WriteLine("");
+        Console.WriteLine("True and False overload:");
+        Console.WriteLine("");
+        
+        ThreeD a = new ThreeD(5, 6, 7);
+        ThreeD b = new ThreeD(10, 10, 10);
+        ThreeD c = new ThreeD(0, 0, 0);
+        
+        Console.Write("Here is a: ");
+        a.Show();
+        Console.Write("Here is b: ");
+        b.Show();
+        Console.Write("Here is c: ");
+        c.Show();
+        Console.WriteLine();
+        
+        if(a) Console.WriteLine("a is true.");
+        else Console.WriteLine("a is false.");
+        
+        if(b) Console.WriteLine("b is true.");
+        else Console.WriteLine("b is false.");
+        
+        if(c) Console.WriteLine("c is true.");
+        else Console.WriteLine("c is false.");
+        
+        Console.WriteLine();
+        
+        Console.WriteLine("Control a loop using a ThreeD object.");
+        do {
+            b.Show();
+            b--;
+        } while(b);
+    }
+ 
+    static void testOperMethodOverload()
+    {
+        Console.WriteLine("Operator method overload:");
+        Console.WriteLine("");
         ThreeD a = new ThreeD(1, 2, 3);
         ThreeD b = new ThreeD(10, 10, 10);
         ThreeD c = new ThreeD();
@@ -27,5 +78,7 @@ public class ThreeDDemo
         c = 15 + b; // int + ThreeD
         Console.Write("Result of 15 + b: ");
         c.Show();
+
     }
+    
 }
