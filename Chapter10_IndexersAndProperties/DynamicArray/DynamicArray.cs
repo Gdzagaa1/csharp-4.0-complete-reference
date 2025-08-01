@@ -1,5 +1,9 @@
 namespace Chapter10_IndexersAndProperties.DynamicArray;
 
+/*
+ * My implementation of dynamic array
+ * with indexers and properties
+ */
 public class DynamicArray
 {
     private int[] arr;
