@@ -7,11 +7,65 @@ public class ThreeDDemo
 
         testOperMethodOverload();
         testTrueAndFalseOverload();
-        
+        testLogical();
+    }
 
-
+    static void testLogical()
+    {
+        Console.WriteLine("");
+        Console.WriteLine("LogicalOp overload:");
+        Console.WriteLine("");
         
+        ThreeD a = new ThreeD(5, 6, 7);
+        ThreeD b = new ThreeD(10, 10, 10);
+        ThreeD c = new ThreeD(0, 0, 0);
         
+        Console.Write("Here is a: ");
+        a.Show();
+        Console.Write("Here is b: ");
+        b.Show();
+        Console.Write("Here is c: ");
+        c.Show();
+        Console.WriteLine();
+        
+        if(a) Console.WriteLine("a is true.");
+        if(b) Console.WriteLine("b is true.");
+        if(c) Console.WriteLine("c is true.");
+        
+        if(!a) Console.WriteLine("a is false.");
+        if(!b) Console.WriteLine("b is false.");
+        if(!c) Console.WriteLine("c is false.");
+        
+        Console.WriteLine();
+        
+        Console.WriteLine("Use & and |");
+        if(a & b) Console.WriteLine("a & b is true.");
+        else Console.WriteLine("a & b is false.");
+        
+        if(a & c) Console.WriteLine("a & c is true.");
+        else Console.WriteLine("a & c is false.");
+        
+        if(a | b) Console.WriteLine("a | b is true.");
+        else Console.WriteLine("a | b is false.");
+        
+        if(a | c) Console.WriteLine("a | c is true.");
+        else Console.WriteLine("a | c is false.");
+        
+        Console.WriteLine();
+        
+        // Now use short-circuit ops.
+        Console.WriteLine("Use short-circuit && and ||");
+        if(a && b) Console.WriteLine("a && b is true.");
+        else Console.WriteLine("a && b is false.");
+        
+        if(a && c) Console.WriteLine("a && c is true.");
+        else Console.WriteLine("a && c is false.");
+        
+        if(a || b) Console.WriteLine("a || b is true.");
+        else Console.WriteLine("a || b is false.");
+        
+        if(a || c) Console.WriteLine("a || c is true.");
+        else Console.WriteLine("a || c is false.");
     }
 
     static void testTrueAndFalseOverload()

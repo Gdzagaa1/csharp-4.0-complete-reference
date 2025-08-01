@@ -87,6 +87,33 @@ public class ThreeD
         else
             return false;
     }
+    
+    // Overload | for short-circuit evaluation.
+    public static ThreeD operator |(ThreeD op1, ThreeD op2)
+    {
+        if( ((op1.x != 0) || (op1.y != 0) || (op1.z != 0)) |
+            ((op2.x != 0) || (op2.y != 0) || (op2.z != 0)) )
+            return new ThreeD(1, 1, 1);
+        else
+            return new ThreeD(0, 0, 0);
+    }
+    
+    // Overload & for short-circuit evaluation.
+    public static ThreeD operator &(ThreeD op1, ThreeD op2)
+    {
+        if( ((op1.x != 0) && (op1.y != 0) && (op1.z != 0)) &
+            ((op2.x != 0) && (op2.y != 0) && (op2.z != 0)) )
+            return new ThreeD(1, 1, 1);
+        else
+            return new ThreeD(0, 0, 0);
+    }
+    
+    // Overload !.
+    public static bool operator !(ThreeD op)
+    {
+        if(op) return false;
+        else return true;
+    }
 
  
     // Show X, Y, Z coordinates.
