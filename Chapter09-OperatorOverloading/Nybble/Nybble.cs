@@ -21,47 +21,52 @@ public class Nybble
 {
     int val; // underlying storage
     
+    public const int MinValue = 0;
+    public const int MaxValue = 15;
     
     public Nybble() { val = 0; }
     public Nybble(int i) {
+        if (i < MinValue || i > MaxValue)
+            throw new OverflowException($"Value {i} is outside the valid Nybble range ({MinValue}-{MaxValue})");
         val = i;
-        val = val & 0xF; // retain lower 4 bits
+    }
+    
+    private static void ValidateRange(int value)
+    {
+        if (value < MinValue || value > MaxValue)
+            throw new OverflowException($"Operation result {value} is outside the valid Nybble range ({MinValue}-{MaxValue})");
     }
     
     // Overload binary + for Nybble + Nybble.
     public static Nybble operator +(Nybble op1, Nybble op2)
     {
-        Nybble result = new Nybble();
-        result.val = op1.val + op2.val;
-        result.val = result.val & 0xF; // retain lower 4 bits
-        return result;
+        int result = op1.val + op2.val;
+        ValidateRange(result);
+        return new Nybble(result);
     }
     
     // Overload binary + for Nybble + int.
     public static Nybble operator +(Nybble op1, int op2)
     {
-        Nybble result = new Nybble();
-        result.val = op1.val + op2;
-        result.val = result.val & 0xF; // retain lower 4 bits
-        return result;
+        int result = op1.val + op2;
+        ValidateRange(result);
+        return new Nybble(result);
     }
     
     // Overload binary + for int + Nybble.
     public static Nybble operator +(int op1, Nybble op2)
     {
-        Nybble result = new Nybble();
-        result.val = op1 + op2.val;
-        result.val = result.val & 0xF; // retain lower 4 bits
-        return result;
+        int result = op1 + op2.val;
+        ValidateRange(result);
+        return new Nybble(result);
     }
     
     // Overload ++.
     public static Nybble operator ++(Nybble op)
     {
-        Nybble result = new Nybble();
-        result.val = op.val + 1;
-        result.val = result.val & 0xF; // retain lower 4 bits
-        return result;
+        int result = op.val + 1;
+        ValidateRange(result);
+        return new Nybble(result);
     }
     
     // Overload >.
