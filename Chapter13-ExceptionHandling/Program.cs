@@ -2,6 +2,7 @@
 
 using Chapter13_ExceptionHandling.Exc;
 using Chapter13_ExceptionHandling.Nested;
+using Chapter13_ExceptionHandling.Rethrowing;
 
 class Program
 {
@@ -9,6 +10,14 @@ class Program
     {
         testExc();
         testNested();
+        testRethrowing();
+    }
+
+    static void testRethrowing()
+    {
+        Console.WriteLine("-- Rethrow --");
+        RethrowDemo.demo();
+        Console.WriteLine("");
     }
 
     static void testNested()
